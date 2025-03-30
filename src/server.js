@@ -22,7 +22,8 @@ app.use(
     cors({
         oirign: ENVIROMENT.URL_FRONTEND,
         credentials: true,
-        allowedHeaders: ['Content-Type', 'Authorization']
+        allowedHeaders: ['Content-Type', 'Authorization'],
+        origin: "https://slack-frontend-psi.vercel.app"
     })
 ) 
 
