@@ -13,8 +13,8 @@ const ENVIROMENT = {
     SECRET_KEY_JWT: process.env.SECRET_KEY_JWT,
     GMAIL_USERNAME: process.env.GMAIL_USERNAME,
     GMAIL_PASSWORD: process.env.GMAIL_PASSWORD,
-    URL_BACKEND: process.env.URL_BACKEND || 'http://localhost:3000',
-    URL_FRONTEND: process.env.URL_FRONTEND || 'http://localhost:5173'
+    URL_BACKEND: process.env.URL_BACKEND || 'https://slack-frontend-eight.vercel.app',
+    URL_FRONTEND: process.env.URL_FRONTEND || 'https://slack-backend-tau.vercel.app'
 }
 
 
