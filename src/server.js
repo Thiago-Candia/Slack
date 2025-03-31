@@ -16,8 +16,6 @@ console.log(ENVIROMENT.PORT)
 
 const app = express()
 
-app.use(cors())
-
 app.use(
     cors({
         oirign: ENVIROMENT.URL_FRONTEND,
