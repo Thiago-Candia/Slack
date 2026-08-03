@@ -9,14 +9,15 @@ class WorkspaceRepository {
         {
             [WORKSPACE_PROPS.NAME]: name, 
             [WORKSPACE_PROPS.OWNER]: owner_id,
-            [WORKSPACE_PROPS.MEMBERS]: members
+            [WORKSPACE_PROPS.IMAGE_BASE64]: workspace_image_base64
         }
     ){
         const workspace = await Workspace.create(
             {
                 name,
                 owner: owner_id,
-                members: [owner_id]
+                members: [owner_id],
+                workspace_image_base64
             }
         )
         return workspace
